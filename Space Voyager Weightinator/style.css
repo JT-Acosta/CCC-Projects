@@ -1,0 +1,100 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Space Voyager.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Lilita One', sans-serif;
+    color: #ff7b00;
+}
+
+label, input, select, #calculateButton, #resetButton, #result {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type = 'checkbox'] {
+    transform: scale(1.5);
+}
+
+label {
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif;
+    color: #ffae00;
+}
+
+input, select,#calculateButton, #resetButton  {
+    font-size: 30px;
+    width: 10%;
+    margin-bottom: 50px;
+}
+
+#calculateButton {
+    padding: 10px 20px;
+    background-color: #8c00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+#calculateButton:hover {
+    background-color: #b3007d;
+}
+
+#result {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lilita One', sans-serif;
+    color: #b3007d;
+}
+
+#resetButton {
+    padding: 10px 20px;
+    background-color: #8c00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+#resetButton:hover {
+    background-color: #b3007d;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+#result.pulse {
+    animation: pulse 1s infinite;
+  }
+  

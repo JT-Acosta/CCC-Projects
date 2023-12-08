@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ='utf-8'>
+    <title>Space Voyager Weightinator</title>
+    <link rel = 'stylesheet' type = 'text/css' href = 'style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Space Voyager Weightinator</h1>
+    <div class = 'background'></div>
+    <label for = 'checkPluto'>Is Pluto a Planet?</label>
+    <input type = 'checkbox' id = 'checkPluto' onchange = 'populateDropdown()'>
+    <label for = 'userWeight'>Weight?</label>
+    <input type ='text' id = 'userWeight' placeholder = 'Weight (LBs)'>
+    <label for = 'planets'>Planet/Moon/Star To Visit:</label>
+    <select id = 'planets' name = 'planets'>
+      <option disabled selected>Select A Planet</option>
+      <option value = 'Sun'>Sun</option>
+      <option value = 'Mercury'>Mercury</option>
+      <option value = 'Venus'>Venus</option>
+      <option value = 'Earth'>Earth</option>
+      <option value = 'Moon'>Moon</option>
+      <option value = 'Mars'>Mars</option>
+      <option value = 'Jupiter'>Jupiter</option>
+      <option value = 'Saturn'>Saturn</option>
+      <option value = 'Uranus'>Uranus</option>
+      <option value = 'Neptune'>Neptune</option>
+    </select>
+    <button id = 'calculateButton'>Calculate Weight</button>
+    <button id = 'resetButton'>Reset</button>
+    <p id = 'result'></p>
+    <script src = 'main.js'></script>
+  </body>
+</html>
